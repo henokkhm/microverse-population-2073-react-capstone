@@ -1,0 +1,30 @@
+.appHeader {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--primary-color-300);
+}
+
+.pageTitle {
+  text-transform: lowercase;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+.iconBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 200ms ease-in-out;
+}
+
+.iconBtn:hover {
+  transform: scale(1.05);
+}
+
+.iconBtn:active {
+  transform: translateY(0.25rem);
+}

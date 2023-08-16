@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import { getWorldData } from './redux/world/worldSlice';
 import ContinentPage from './pages/ContinentPage';
+import Header from './components/common/Header';
 import Home from './pages/Home';
 
 function App() {
@@ -15,9 +16,7 @@ function App() {
 
   return (
     <div>
-      <header>
-        <h1>Population 2073</h1>
-      </header>
+      <Header />
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
