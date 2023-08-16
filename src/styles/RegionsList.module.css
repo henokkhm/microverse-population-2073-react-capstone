@@ -18,9 +18,15 @@
 }
 
 .regionsList > * {
-  width: 50%;
+  width: 100%;
   color: var(--gray-400);
   text-decoration: none;
+}
+
+@media (min-width: 34rem) {
+  .regionsList > * {
+    width: 50%;
+  }
 }
 
 .loading {
