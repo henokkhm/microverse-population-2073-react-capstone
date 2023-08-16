@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 import Country from './Country';
-import styles from '../styles/CountriesList.module.css';
+import styles from '../../styles/CountriesList.module.css';
 
 function CountriesList({ countryData }) {
   return (
