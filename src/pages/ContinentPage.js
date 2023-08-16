@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 import { getRegionData } from '../redux/region/regionSlice';
 import CountriesList from '../components/countries/CountriesList';
 import styles from '../styles/Region.module.css';
+import Hero from '../components/common/Hero';
 
 function ContinentPage() {
   const { regionId } = useParams();
@@ -32,12 +33,25 @@ function ContinentPage() {
     );
   }
 
+  const {
+    regionName,
+    regionImageURL,
+    regionPopulationIn2073,
+    countries,
+  } = regionData;
+
   return (
     <>
+      <Hero
+        title={regionName}
+        imgURL={regionImageURL}
+        imgAlt="image of the glob"
+        populationIn2073={regionPopulationIn2073}
+      />
       <CountriesList
-        regionId={regionData.regionId}
-        regionName={regionData.regionName}
-        countries={regionData.countries}
+        regionId={regionId}
+        regionName={regionName}
+        countries={countries}
       />
     </>
   );
