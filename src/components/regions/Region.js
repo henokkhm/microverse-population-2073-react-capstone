@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import styles from '../styles/Region.module.css';
+import styles from '../../styles/Region.module.css';
 import rightArrow from '../../assets/icons/circled-arrow.svg';
 
 function Region({ name, populationIn2073, index }) {
