@@ -28,14 +28,3 @@
     width: 50%;
   }
 }
-
-.loading {
-  font-size: 1.2rem;
-  text-align: center;
-}
-
-.error {
-  padding-top: 2rem;
-  font-size: 1.2rem;
-  color: rgb(119, 0, 0);
-}

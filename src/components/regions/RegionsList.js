@@ -1,37 +1,17 @@
-import { useSelector } from 'react-redux';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 import styles from '../../styles/RegionsList.module.css';
 import Region from './Region';
 
-function RegionsList() {
-  const { worldData, isLoadingWorldData, errorLoadingWorldData } = useSelector(
-    (store) => store.world,
-  );
-
-  if (isLoadingWorldData) {
-    return (
-      <div className={styles.loading}>
-        Loading world population 2073 data...
-      </div>
-    );
-  }
-
-  if (errorLoadingWorldData) {
-    return (
-      <div className={styles.error}>
-        Error loading world population 2073 data. Please try again later.
-      </div>
-    );
-  }
-
+function RegionsList({ regions }) {
   return (
     <div className={styles.regionsWrapper}>
       <h2 className={styles.regionsHeader}>
         World Population in 2073 by Region
       </h2>
       <ul className={styles.regionsList}>
-        {worldData.regions.map((region, index) => (
+        {regions.map((region, index) => (
           <Link key={region.id} to={`region/${region.id}`}>
             <Region
               name={region.name}
@@ -45,5 +25,15 @@ function RegionsList() {
     </div>
   );
 }
+
+const regionsArrayShape = PropTypes.shape({
+  id: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  populationIn2073: PropTypes.number.isRequired,
+});
+
+RegionsList.propTypes = {
+  regions: PropTypes.arrayOf(regionsArrayShape).isRequired,
+};
 
 export default RegionsList;
