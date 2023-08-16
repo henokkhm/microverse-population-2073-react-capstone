@@ -10,7 +10,9 @@ const initialState = {
 export const getRegionData = createAsyncThunk(
   'regions/getRegionData',
   async (regionId) => {
-    const regionData = regionsList.find((region) => region.id === regionId);
+    const regionData = regionsList.find(
+      (regionData) => regionData.regionId === regionId,
+    );
     return new Promise((resolve) => {
       resolve(regionData);
     });
