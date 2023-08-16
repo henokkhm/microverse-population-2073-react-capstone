@@ -1,3 +1,15 @@
+:root {
+  /* colors */
+  --primary-color-200: #cf4278;
+  --primary-color-300: #dc4480;
+  --primary-color-400: #fc5193;
+  --gray-200: #fff2fb;
+  --gray-400: #fdc2df;
+  --white: #fff;
+  --black: #000;
+}
+
 body {
   font-family: 'Lato', sans-serif;
+  color: var(--gray-200);
 }
