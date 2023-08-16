@@ -6,6 +6,7 @@ import { getWorldData } from './redux/world/worldSlice';
 import ContinentPage from './pages/ContinentPage';
 import Header from './components/common/Header';
 import Home from './pages/Home';
+import styles from './styles/App.module.css';
 
 function App() {
   const dispatch = useDispatch();
@@ -15,7 +16,7 @@ function App() {
   }, [dispatch]);
 
   return (
-    <div>
+    <div className={styles.app}>
       <Header />
       <main>
         <Routes>

@@ -1,0 +1,7 @@
+.app {
+  margin: 0 auto;
+  min-width: 23rem;
+  max-width: 48rem;
+  min-height: 100vh;
+  background-color: var(--primary-color-300);
+}
