@@ -21,7 +21,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/:regionName" element={<ContinentPage />} />
+          <Route path="/region/:regionId" element={<ContinentPage />} />
         </Routes>
       </main>
     </div>
