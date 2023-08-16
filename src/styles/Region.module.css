@@ -31,6 +31,11 @@
   height: 3rem;
 }
 
+.regionMap {
+  height: 15rem;
+  margin-right: auto;
+}
+
 .regionContent {
   display: flex;
   flex-direction: column;

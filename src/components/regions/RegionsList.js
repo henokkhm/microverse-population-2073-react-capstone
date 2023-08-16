@@ -35,6 +35,7 @@ function RegionsList() {
           <Link key={region.id} to={`region/${region.id}`}>
             <Region
               name={region.name}
+              imageURL={region.imageURL}
               populationIn2073={region.populationIn2073}
               index={index}
             />
