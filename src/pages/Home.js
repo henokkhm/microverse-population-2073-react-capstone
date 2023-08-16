@@ -1,5 +1,11 @@
+import RegionsList from '../components/regions/RegionsList';
+
 function Home() {
-  return <div>Home</div>;
+  return (
+    <>
+      <RegionsList />
+    </>
+  );
 }
 
 export default Home;

@@ -14,11 +14,17 @@ function Region({ name, populationIn2073, index }) {
   return (
     <li className={styles.region} style={bgStyle}>
       <button className={styles.arrowBtn} type="button">
-        <img className={styles.arrowBtnIcon} src={rightArrow} alt="circled arrow pointing right" />
+        <img
+          className={styles.arrowBtnIcon}
+          src={rightArrow}
+          alt="circled arrow pointing right"
+        />
       </button>
       <div className={styles.regionContent}>
         <span className={styles.regionName}>{name}</span>
-        <span className={styles.regionPopulationIn2073}>{populationIn2073.toLocaleString()}</span>
+        <span className={styles.regionPopulationIn2073}>
+          {populationIn2073.toLocaleString()}
+        </span>
       </div>
     </li>
   );
