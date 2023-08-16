@@ -1,0 +1,37 @@
+{
+  "region": "World [mock]",
+  "populationIn2073": 10337756759,
+  "regions": [
+    {
+      "id": "bbf0577d-2cec-44e8-a8c7-a394c2fcca99",
+      "name": "Asia [mock]",
+      "populationIn2073": 5174232028
+    },
+
+    {
+      "id": "46d44cfa-1781-4afd-89b7-e760af80e3b6",
+      "name": "Africa [mock]",
+      "populationIn2073": 3285421933
+    },
+    {
+      "id": "da57f7de-7c58-44b5-8052-f27f5daa1b07",
+      "name": "Latin America [mock]",
+      "populationIn2073": 733456898
+    },
+    {
+      "id": "3ba371eb-245a-4470-a465-85ded14872e0",
+      "name": "Europe [mock]",
+      "populationIn2073": 641911827
+    },
+    {
+      "id": "cc7e48b7-c558-42dd-a889-d80a0ff9a377",
+      "name": "Northern America [mock]",
+      "populationIn2073": 438261304
+    },
+    {
+      "id": "11d94121-dd2c-47ee-a446-b3ddd61fa31a",
+      "name": "Oceania [mock]",
+      "populationIn2073": 64472769
+    }
+  ]
+}

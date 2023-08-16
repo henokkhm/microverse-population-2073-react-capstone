@@ -1,37 +1,147 @@
-{
-  "region": "World [mock]",
-  "populationIn2073": 10337756759,
-  "regions": [
-    {
-      "id": "bbf0577d-2cec-44e8-a8c7-a394c2fcca99",
-      "name": "Asia [mock]",
-      "populationIn2073": 5174232028
-    },
-
-    {
-      "id": "46d44cfa-1781-4afd-89b7-e760af80e3b6",
-      "name": "Africa [mock]",
-      "populationIn2073": 3285421933
-    },
-    {
-      "id": "da57f7de-7c58-44b5-8052-f27f5daa1b07",
-      "name": "Latin America [mock]",
-      "populationIn2073": 733456898
-    },
-    {
-      "id": "3ba371eb-245a-4470-a465-85ded14872e0",
-      "name": "Europe [mock]",
-      "populationIn2073": 641911827
-    },
-    {
-      "id": "cc7e48b7-c558-42dd-a889-d80a0ff9a377",
-      "name": "Northern America [mock]",
-      "populationIn2073": 438261304
-    },
-    {
-      "id": "11d94121-dd2c-47ee-a446-b3ddd61fa31a",
-      "name": "Oceania [mock]",
-      "populationIn2073": 64472769
+[
+  {
+    "region": "africa",
+    "data": {
+      "region": "Africa [mock]",
+      "populationIn2073": 3285421933,
+      "countries": [
+        {
+          "id": "b1b38c41-cb9a-44f2-929b-366b097cfe22",
+          "name": "Nigeria [mock]",
+          "populationIn2073": 483745057
+        },
+        {
+          "id": "de871b4b-57e9-4b97-a62d-74aa3b091c40",
+          "name": "Democratic Republic of the Congo [mock]",
+          "populationIn2073": 327552071
+        },
+        {
+          "id": "6de33d15-f97e-4005-850f-8fc37f17a79c",
+          "name": "Ethiopia [mock]",
+          "populationIn2073": 278863945
+        }
+      ]
     }
-  ]
-}
+  },
+  {
+    "region": "asia",
+    "data": {
+      "region": "Asia [mock]",
+      "populationIn2073": 5174232028,
+      "countries": [
+        {
+          "id": "1a43497f-1e47-4095-9e8c-72d9141b5d4b",
+          "name": "India [mock]",
+          "populationIn2073": 168404406
+        },
+        {
+          "id": "49943bfc-c183-484e-be45-17468eb39661",
+          "name": "China [mock]",
+          "populationIn2073": 1056989242
+        },
+        {
+          "id": "2920d9fa-57eb-404c-b4fc-647039d43374",
+          "name": "Pakistan [mock]",
+          "populationIn2073": 44714003
+        }
+      ]
+    }
+  },
+  {
+    "region": "europe",
+    "data": {
+      "region": "Europe [mock]",
+      "populationIn2073": 641911827,
+      "countries": [
+        {
+          "id": "8994e670-5f22-4194-86f2-16e8da0fa4a2",
+          "name": "Russian Federation [mock]",
+          "populationIn2073": 121255738
+        },
+        {
+          "id": "7fdcffdc-b7d4-4b19-a372-46bd30f836c0",
+          "name": "Germany [mock]",
+          "populationIn2073": 73367272
+        },
+        {
+          "id": "57e67aef-59b5-4866-bc67-ec5f23ce3d92",
+          "name": "United Kingdom [mock]",
+          "populationIn2073": 71625759
+        }
+      ]
+    }
+  },
+  {
+    "region": "latin-america",
+    "data": {
+      "region": "Latin America [mock]",
+      "populationIn2073": 733456898,
+      "countries": [
+        {
+          "id": "602c49ad-1bea-4a9f-8fdb-55f2f7b308e8",
+          "name": "Brazil [mock]",
+          "populationIn2073": 216455975
+        },
+        {
+          "id": "e65afbf0-9414-4636-9ea8-ba750b2e8539",
+          "name": "Mexico [mock]",
+          "populationIn2073": 137737696
+        },
+        {
+          "id": "4a3ed4b1-190f-4e3f-9c3d-e3788cb06f8d",
+          "name": "Colombia [mock]",
+          "populationIn2073": 54258967
+        }
+      ]
+    }
+  },
+  {
+    "region": "northern-america",
+    "data": {
+      "region": "Northern America [mock]",
+      "populationIn2073": 438261304,
+
+      "countries": [
+        {
+          "id": "f662c9cb-4c70-44ec-a617-08ed710bff2d",
+          "name": "United [mock] States of America",
+          "populationIn2073": 388194276
+        },
+        {
+          "id": "d5028ee5-54f2-424e-8e76-2f45bc6b42a4",
+          "name": "Canada [mock]",
+          "populationIn2073": 49968912
+        },
+        {
+          "id": "0d0826d3-5e51-4a56-be56-17fe13f32cf8",
+          "name": "Greenland [mock]",
+          "populationIn2073": 48582
+        }
+      ]
+    }
+  },
+  {
+    "region": "oceania",
+    "data": {
+      "region": "Oceania [mock]",
+      "populationIn2073": 64472769,
+      "countries": [
+        {
+          "id": "b047d3ab-4615-44ec-99cd-917a333b7830",
+          "name": "Australia [mock]",
+          "populationIn2073": 35423205
+        },
+        {
+          "id": "34c07bee-b0c5-4c1b-9f82-8ce58497dc60",
+          "name": "Papua New Guinea [mock]",
+          "populationIn2073": 17379663
+        },
+        {
+          "id": "787fa4ef-727e-4449-b62c-fa09c5a93484",
+          "name": "New Zealand [mock]",
+          "populationIn2073": 6134395
+        }
+      ]
+    }
+  }
+]
