@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The CountriesList component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="countriesListWrapper"
+  >
+    <h2
+      class="countriesListHeader"
+    >
+      Asia [mock] Population in 2073
+    </h2>
+    <ul
+      class="countriesList"
+      data-region-id="bbf0577d-2cec-44e8-a8c7-a394c2fcca99"
+    >
+      <li
+        class="country"
+      >
+        <div
+          class="countryName"
+        >
+          India [mock]
+        </div>
+        <div>
+          168,404,406 people
+        </div>
+        <button
+          class="arrowBtn"
+          type="button"
+        >
+          <img
+            alt="circled arrow button pointing right"
+            class="arrowBtnIcon"
+            src="circled-arrow.svg"
+          />
+        </button>
+      </li>
+      <li
+        class="country"
+      >
+        <div
+          class="countryName"
+        >
+          China [mock]
+        </div>
+        <div>
+          1,056,989,242 people
+        </div>
+        <button
+          class="arrowBtn"
+          type="button"
+        >
+          <img
+            alt="circled arrow button pointing right"
+            class="arrowBtnIcon"
+            src="circled-arrow.svg"
+          />
+        </button>
+      </li>
+      <li
+        class="country"
+      >
+        <div
+          class="countryName"
+        >
+          Pakistan [mock]
+        </div>
+        <div>
+          44,714,003 people
+        </div>
+        <button
+          class="arrowBtn"
+          type="button"
+        >
+          <img
+            alt="circled arrow button pointing right"
+            class="arrowBtnIcon"
+            src="circled-arrow.svg"
+          />
+        </button>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
