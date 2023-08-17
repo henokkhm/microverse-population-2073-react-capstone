@@ -11,7 +11,7 @@
   padding: 2rem 0 2rem 2rem;
   width: 50%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   overflow: hidden;
 }
