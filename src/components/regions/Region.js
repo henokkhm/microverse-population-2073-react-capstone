@@ -17,7 +17,7 @@ function Region({
   };
 
   return (
-    <li className={styles.region} style={bgStyle}>
+    <li className={styles.region} style={bgStyle} data-testid={`navlink-to-${name}-page`}>
       <button className={styles.arrowBtn} type="button">
         <img
           className={styles.arrowBtnIcon}

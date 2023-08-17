@@ -10,7 +10,7 @@ function Header() {
   const location = useLocation();
 
   const backButton = (
-    <Link to="/">
+    <Link to="/" data-testid="back-button">
       <button className={styles.iconBtn} type="button">
         <img src={back} alt="go back button" />
       </button>

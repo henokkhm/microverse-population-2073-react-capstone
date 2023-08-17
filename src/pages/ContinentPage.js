@@ -41,7 +41,7 @@ function ContinentPage() {
   } = regionData;
 
   return (
-    <>
+    <div data-testid={`${regionName}-page`}>
       <Hero
         title={regionName}
         imgURL={regionImageURL}
@@ -53,7 +53,7 @@ function ContinentPage() {
         regionName={regionName}
         countries={countries}
       />
-    </>
+    </div>
   );
 }
 

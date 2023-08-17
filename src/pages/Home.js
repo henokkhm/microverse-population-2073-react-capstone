@@ -32,7 +32,7 @@ function Home() {
   } = worldData;
 
   return (
-    <>
+    <div data-testid="home-page">
       <Hero
         title={title}
         imgURL={worldImageURL}
@@ -41,7 +41,7 @@ function Home() {
         slantImage
       />
       <RegionsList regions={regions} />
-    </>
+    </div>
   );
 }
 
