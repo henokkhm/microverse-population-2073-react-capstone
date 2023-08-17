@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Region component matches snapshot 1`] = `
+<DocumentFragment>
+  <li
+    class="region"
+  >
+    <button
+      class="arrowBtn"
+      type="button"
+    >
+      <img
+        alt="circled arrow pointing right"
+        class="arrowBtnIcon"
+        src="circled-arrow.svg"
+      />
+    </button>
+    <div
+      class="regionContent"
+    >
+      <img
+        alt="map of Asia [mock] region"
+        class="regionMap"
+        src="/images/asia.png"
+      />
+      <span
+        class="regionName"
+      >
+        Asia [mock]
+      </span>
+      <span
+        class="regionPopulationIn2073"
+      >
+        5,174,232,028 people
+      </span>
+    </div>
+  </li>
+</DocumentFragment>
+`;

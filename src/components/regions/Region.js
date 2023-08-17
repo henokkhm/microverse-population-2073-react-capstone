@@ -33,7 +33,7 @@ function Region({
         />
         <span className={styles.regionName}>{name}</span>
         <span className={styles.regionPopulationIn2073}>
-          {populationIn2073.toLocaleString()}
+          {`${populationIn2073.toLocaleString()} people`}
         </span>
       </div>
     </li>
