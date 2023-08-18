@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Country component matches snapshot 1`] = `
+<DocumentFragment>
+  <li
+    class="country"
+  >
+    <div
+      class="countryName"
+    >
+      Ethiopia [mock]
+    </div>
+    <div>
+      278,863,945 people
+    </div>
+    <button
+      class="arrowBtn"
+      type="button"
+    >
+      <img
+        alt="circled arrow button pointing right"
+        class="arrowBtnIcon"
+        src="circled-arrow.svg"
+      />
+    </button>
+  </li>
+</DocumentFragment>
+`;

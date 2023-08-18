@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Hero component matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="hero"
+  >
+    <div
+      class="heroImgWrapper"
+    >
+      <img
+        alt="image of the glob"
+        class="heroImg"
+        src="/images/globe.gif"
+        style="transform: rotateZ(-18deg);"
+      />
+    </div>
+    <div
+      class="heroContent"
+    >
+      <h2
+        class="heroTitle"
+      >
+        World [mock]
+      </h2>
+      <p
+        class="heroSubtitle"
+      >
+        <span>
+          10,337,756,759
+        </span>
+         
+        <span>
+          people
+        </span>
+      </p>
+    </div>
+  </section>
+</DocumentFragment>
+`;

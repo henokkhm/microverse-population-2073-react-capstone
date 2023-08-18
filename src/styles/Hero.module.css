@@ -1,0 +1,40 @@
+.hero {
+  padding: 0 1rem;
+  min-height: 18rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  background-color: var(--primary-color-400);
+}
+
+.heroImgWrapper {
+  padding: 2rem 0 2rem 2rem;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+}
+
+.heroImg {
+  margin: 0 auto;
+  max-height: 17rem;
+}
+
+.heroContent {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heroTitle {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.heroSubtitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+}

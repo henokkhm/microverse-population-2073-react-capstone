@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The RegionsList component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="regionsWrapper"
+  >
+    <h2
+      class="regionsHeader"
+    >
+      World Population in 2073 by Region
+    </h2>
+    <ul
+      class="regionsList"
+    >
+      <a
+        href="/region/bbf0577d-2cec-44e8-a8c7-a394c2fcca99"
+      >
+        <li
+          class="region"
+          data-testid="navlink-to-Asia [mock]-page"
+        >
+          <button
+            class="arrowBtn"
+            type="button"
+          >
+            <img
+              alt="circled arrow pointing right"
+              class="arrowBtnIcon"
+              src="circled-arrow.svg"
+            />
+          </button>
+          <div
+            class="regionContent"
+          >
+            <img
+              alt="map of Asia [mock] region"
+              class="regionMap"
+              src="/images/asia.png"
+            />
+            <span
+              class="regionName"
+            >
+              Asia [mock]
+            </span>
+            <span
+              class="regionPopulationIn2073"
+            >
+              5,174,232,028 people
+            </span>
+          </div>
+        </li>
+      </a>
+      <a
+        href="/region/46d44cfa-1781-4afd-89b7-e760af80e3b6"
+      >
+        <li
+          class="region"
+          data-testid="navlink-to-Africa [mock]-page"
+        >
+          <button
+            class="arrowBtn"
+            type="button"
+          >
+            <img
+              alt="circled arrow pointing right"
+              class="arrowBtnIcon"
+              src="circled-arrow.svg"
+            />
+          </button>
+          <div
+            class="regionContent"
+          >
+            <img
+              alt="map of Africa [mock] region"
+              class="regionMap"
+              src="/images/africa.png"
+            />
+            <span
+              class="regionName"
+            >
+              Africa [mock]
+            </span>
+            <span
+              class="regionPopulationIn2073"
+            >
+              3,285,421,933 people
+            </span>
+          </div>
+        </li>
+      </a>
+    </ul>
+  </div>
+</DocumentFragment>
+`;

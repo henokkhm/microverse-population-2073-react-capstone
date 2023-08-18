@@ -1,0 +1,62 @@
+.region {
+  position: relative;
+  min-height: 16rem;
+  height: 100%;
+  min-width: 16rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.arrowBtn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 200ms ease-in-out;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.arrowBtn:hover {
+  transform: scale(1.1);
+}
+
+.arrowBtn:active {
+  transform: translateY(0.25rem);
+}
+
+.arrowBtnIcon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.regionMap {
+  height: 15rem;
+  margin-right: auto;
+}
+
+.regionContent {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: flex-end;
+  margin-top: auto;
+}
+
+.regionName {
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.5rem;
+  max-width: 80%;
+}
+
+.regionPopulationIn2073 {
+  text-align: right;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
