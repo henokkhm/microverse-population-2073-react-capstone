@@ -1,5 +1,4 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import regionsList from '../../data/regions.json';
 
 const initialState = {
   regionData: {},
@@ -9,13 +8,15 @@ const initialState = {
 
 export const getRegionData = createAsyncThunk(
   'regions/getRegionData',
-  async (regionId) => {
-    const regionData = regionsList.find(
-      (regionData) => regionData.regionId === regionId,
-    );
-    return new Promise((resolve) => {
-      resolve(regionData);
-    });
+  async (regionId, thunkAPI) => {
+    try {
+      const url = `https://population-2073.onrender.com/${regionId}`;
+      const response = await fetch(url);
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      return thunkAPI.rejectWithValue(`Something went wrong! ${error}`);
+    }
   },
 );
 
