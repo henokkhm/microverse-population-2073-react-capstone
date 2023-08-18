@@ -6,6 +6,7 @@ import { getRegionData } from '../redux/region/regionSlice';
 import CountriesList from '../components/countries/CountriesList';
 import styles from '../styles/Region.module.css';
 import Hero from '../components/common/Hero';
+import SearchBar from '../components/common/SearchBar';
 
 function ContinentPage() {
   const { regionId } = useParams();
@@ -48,6 +49,7 @@ function ContinentPage() {
         imgAlt="image of the glob"
         populationIn2073={regionPopulationIn2073}
       />
+      <SearchBar />
       <CountriesList
         regionId={regionId}
         regionName={regionName}
