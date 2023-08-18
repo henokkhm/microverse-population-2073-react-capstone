@@ -13,3 +13,17 @@ body {
   font-family: 'Lato', sans-serif;
   color: var(--gray-200);
 }
+
+.loading,
+.noCountries {
+  padding-top: 2rem;
+  padding-left: 1rem;
+  font-size: 1.2rem;
+}
+
+.error {
+  padding-top: 2rem;
+  padding-left: 1rem;
+  font-size: 1.2rem;
+  color: rgb(119, 0, 0);
+}

@@ -1,9 +1,10 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 import styles from '../../styles/SearchBar.module.css';
 import searchIcon from '../../assets/icons/search-icon.svg';
 
-function SearchBar() {
+function SearchBar({ onChangeHandler }) {
   const [searchTerm, setSearchTerm] = useState('');
   return (
     <div className={styles.searchBarWrapper}>
@@ -14,7 +15,10 @@ function SearchBar() {
           type="text"
           id="searchTerm"
           value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
+          onChange={(e) => {
+            setSearchTerm(e.target.value);
+            onChangeHandler(e.target.value);
+          }}
           placeholder="Filter countries..."
           data-testid="search-input"
         />
@@ -27,5 +31,9 @@ function SearchBar() {
     </div>
   );
 }
+
+SearchBar.propTypes = {
+  onChangeHandler: PropTypes.func.isRequired,
+};
 
 export default SearchBar;

@@ -1,7 +1,6 @@
 import { useSelector } from 'react-redux';
 import Hero from '../components/common/Hero';
 import RegionsList from '../components/regions/RegionsList';
-import styles from '../styles/Home.module.css';
 
 function Home() {
   const { worldData, isLoadingWorldData, errorLoadingWorldData } = useSelector(
@@ -10,7 +9,7 @@ function Home() {
 
   if (isLoadingWorldData) {
     return (
-      <div className={styles.loading}>
+      <div className="loading">
         Loading world population 2073 data...
       </div>
     );
@@ -18,7 +17,7 @@ function Home() {
 
   if (errorLoadingWorldData) {
     return (
-      <div className={styles.error}>
+      <div className="error">
         Error loading world population 2073 data. Please try again later.
       </div>
     );

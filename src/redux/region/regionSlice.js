@@ -13,6 +13,7 @@ export const getRegionData = createAsyncThunk(
       const url = `https://population-2073.onrender.com/${regionId}`;
       const response = await fetch(url);
       const data = await response.json();
+      data.filteredCountries = data.countries;
       return data;
     } catch (error) {
       return thunkAPI.rejectWithValue(`Something went wrong! ${error}`);
@@ -23,7 +24,23 @@ export const getRegionData = createAsyncThunk(
 const regionSlice = createSlice({
   name: 'region',
   initialState,
-  reducers: {},
+  reducers: {
+    filterCountries: (state, { payload }) => {
+      const { searchTerm } = payload;
+
+      if (searchTerm === '') {
+        state.regionData.filteredCountries = state.regionData.countries;
+      }
+
+      state.regionData.filteredCountries = state.regionData.countries.filter(
+        (country) => {
+          const countryName = country.name.toLowerCase();
+          const substring = searchTerm.toLowerCase();
+          return countryName.includes(substring);
+        },
+      );
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(getRegionData.pending, (state) => {
@@ -40,5 +57,7 @@ const regionSlice = createSlice({
       });
   },
 });
+
+export const { filterCountries } = regionSlice.actions;
 
 export default regionSlice.reducer;
